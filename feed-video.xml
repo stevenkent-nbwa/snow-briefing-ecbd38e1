@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Daily Snow Briefing (Video)</title>
+    <link>https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/</link>
+    <description>Private daily audio summary of Pacific Northwest and northern Rockies snow forecasts.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Nov 2026 23:08:22 -0800</lastBuildDate>
+    <itunes:author>Daily Snow Briefing</itunes:author>
+    <itunes:image href="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/cover.jpg"/>
+    <itunes:category text="Sports"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:block>Yes</itunes:block>
+    <item>
+      <title>Thu Nov 12: Indy: Mt. Cain 12 in., Mt. Washington 8 in., Hurricane Ridge 7 in. Boyne quiet. Washington weekend trending wet.</title>
+      <description>Indy: Mt. Cain 12 in., Mt. Washington 8 in., Hurricane Ridge 7 in. Boyne quiet. Washington weekend trending wet.</description>
+      <guid isPermaLink="false">daily-snow-video-2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 09:30:00 -0800</pubDate>
+      <enclosure url="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/episodes/2026-11-12.mp4" length="6924270" type="video/mp4"/>
+      <itunes:duration>3:37</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
