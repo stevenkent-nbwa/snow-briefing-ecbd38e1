@@ -71,4 +71,4 @@ feed = f"""<?xml version="1.0" encoding="UTF-8"?>
 open(os.path.join(repo, FEED), "w").write(feed)
 # keep crawlers out of the site
 open(os.path.join(repo, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")
-print(f"feed.xml written with {len(items)} episode(s)")
+print(f"{FEED} written with {len(items)} episode(s)")
