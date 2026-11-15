@@ -5,37 +5,19 @@
     <link>https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/</link>
     <description>Private daily audio summary of Pacific Northwest and northern Rockies snow forecasts.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 13:51:59 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 15:12:26 -0800</lastBuildDate>
     <itunes:author>Daily Snow Briefing</itunes:author>
     <itunes:image href="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/cover.jpg"/>
     <itunes:category text="Sports"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
-      <title>Sun Nov 15: Indy: Brundage &amp; Tamarack 12 in., Meadows 9 in. Boyne: Big Sky 5 in. WA: cooler air, 1-5 in. above 4,500 ft</title>
-      <description>Indy: Brundage &amp; Tamarack 12 in., Meadows 9 in. Boyne: Big Sky 5 in. WA: cooler air, 1-5 in. above 4,500 ft</description>
+      <title>Sun Nov 15: Indy: Brundage 13 in., Tamarack 12 in. Boyne: Big Sky 6 in. WA: cooler air, 1-5 in. above 4,500 ft</title>
+      <description>Indy: Brundage 13 in., Tamarack 12 in. Boyne: Big Sky 6 in. WA: cooler air, 1-5 in. above 4,500 ft</description>
       <guid isPermaLink="false">daily-snow-video-2026-11-15</guid>
       <pubDate>Sun, 15 Nov 2026 09:30:00 -0800</pubDate>
-      <enclosure url="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/episodes/2026-11-15.mp4" length="5974766" type="video/mp4"/>
-      <itunes:duration>2:56</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Sat Nov 14: Indy: Mt. Cain 17 in., Mt. Washington 14 in., Brundage 10 in. Boyne: Big Sky 5 in. WA storm tonight, bases miss out.</title>
-      <description>Indy: Mt. Cain 17 in., Mt. Washington 14 in., Brundage 10 in. Boyne: Big Sky 5 in. WA storm tonight, bases miss out.</description>
-      <guid isPermaLink="false">daily-snow-video-2026-11-14</guid>
-      <pubDate>Sat, 14 Nov 2026 09:30:00 -0800</pubDate>
-      <enclosure url="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/episodes/2026-11-14.mp4" length="8403962" type="video/mp4"/>
-      <itunes:duration>4:33</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Thu Nov 12: Indy: Mt. Cain 12 in., Mt. Washington 8 in., Hurricane Ridge 7 in. Boyne quiet. Washington weekend trending wet.</title>
-      <description>Indy: Mt. Cain 12 in., Mt. Washington 8 in., Hurricane Ridge 7 in. Boyne quiet. Washington weekend trending wet.</description>
-      <guid isPermaLink="false">daily-snow-video-2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 09:30:00 -0800</pubDate>
-      <enclosure url="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/episodes/2026-11-12.mp4" length="6924270" type="video/mp4"/>
-      <itunes:duration>3:37</itunes:duration>
+      <enclosure url="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/episodes/2026-11-15.mp4" length="6371494" type="video/mp4"/>
+      <itunes:duration>3:15</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
