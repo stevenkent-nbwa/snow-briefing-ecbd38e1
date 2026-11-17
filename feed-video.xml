@@ -5,19 +5,19 @@
     <link>https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/</link>
     <description>Private daily audio summary of Pacific Northwest and northern Rockies snow forecasts.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 15:36:12 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 09:52:36 -0800</lastBuildDate>
     <itunes:author>Daily Snow Briefing</itunes:author>
     <itunes:image href="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/cover.jpg"/>
     <itunes:category text="Sports"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
-      <title>Sun Nov 15: Indy: Brundage 13 in., Tamarack 12 in. Boyne: Big Sky 6 in. WA: cooler air, 1-5 in. above 4,500 ft</title>
-      <description>Indy: Brundage 13 in., Tamarack 12 in. Boyne: Big Sky 6 in. WA: cooler air, 1-5 in. above 4,500 ft</description>
-      <guid isPermaLink="false">daily-snow-video-2026-11-15</guid>
-      <pubDate>Sun, 15 Nov 2026 09:30:00 -0800</pubDate>
-      <enclosure url="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/episodes/2026-11-15.mp4" length="6371494" type="video/mp4"/>
-      <itunes:duration>3:15</itunes:duration>
+      <title>Tue Nov 17: Indy: Pomerelle 19&quot;, Pebble Creek 18&quot;; Boyne: Big Sky 7&quot;. WA: dusting Wed, more snow this weekend</title>
+      <description>Indy: Pomerelle 19&quot;, Pebble Creek 18&quot;; Boyne: Big Sky 7&quot;. WA: dusting Wed, more snow this weekend</description>
+      <guid isPermaLink="false">daily-snow-video-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 09:30:00 -0800</pubDate>
+      <enclosure url="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/episodes/2026-11-17.mp4" length="5926105" type="video/mp4"/>
+      <itunes:duration>3:02</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
