@@ -6,7 +6,7 @@ Usage: python3 make_feed.py <repo_dir> <base_url> [audio|video]
   base_url : e.g. https://OWNER.github.io/REPO   (no trailing slash)
 
 Episodes are the MP3 (or MP4 with "video") files in <repo_dir>/episodes/, named
-"YYYY-MM-DD.mp3". An optional "YYYY-MM-DD.txt" next to each holds the
+"YYYY-MM-DD.mp3" (Snow Briefing) or "YYYY-MM-DD-avalanche.mp4" (weekly NWAC Avalanche Briefing). An optional "YYYY-MM-DD.txt" next to each holds the
 episode description (first line is used as the title suffix).
 """
 import os, sys, subprocess, datetime, html
@@ -30,16 +30,17 @@ items = []
 for f in sorted(os.listdir(ep_dir), reverse=True):
     if not f.endswith(EXT):
         continue
-    day = f[:-4]
+    day = f[:-4]  # "YYYY-MM-DD" (Snow Briefing) or "YYYY-MM-DD-avalanche" (Avalanche Briefing)
+    show = "avalanche" if day.endswith("-avalanche") else ""
     try:
-        d = datetime.datetime.strptime(day, "%Y-%m-%d").replace(hour=9, minute=30, tzinfo=pt)
+        d = datetime.datetime.strptime(day[:10], "%Y-%m-%d").replace(hour=10 if show else 9, minute=30, tzinfo=pt)
     except ValueError:
         continue
     path = os.path.join(ep_dir, f)
     txt = os.path.join(ep_dir, day + ".txt")
     desc = open(txt).read().strip() if os.path.exists(txt) else "Daily snow forecast summary."
     headline = desc.splitlines()[0][:120] if desc else ""
-    title = d.strftime("%a %b %-d") + (f": {headline}" if headline else "")
+    title = ("Avalanche · " if show else "") + d.strftime("%a %b %-d") + (f": {headline}" if headline else "")
     items.append(f"""    <item>
       <title>{html.escape(title)}</title>
       <description>{html.escape(desc)}</description>
@@ -56,7 +57,7 @@ feed = f"""<?xml version="1.0" encoding="UTF-8"?>
   <channel>
     <title>Daily Snow Briefing{SUFFIX}</title>
     <link>{base}/</link>
-    <description>Private daily audio summary of Pacific Northwest and northern Rockies snow forecasts.</description>
+    <description>Private snow forecast briefings for the Pacific Northwest and northern Rockies, plus a weekly NWAC avalanche briefing.</description>
     <language>en-us</language>
     <lastBuildDate>{now}</lastBuildDate>
     <itunes:author>Daily Snow Briefing</itunes:author>

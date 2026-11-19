@@ -3,9 +3,9 @@
   <channel>
     <title>Daily Snow Briefing (Video)</title>
     <link>https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/</link>
-    <description>Private daily audio summary of Pacific Northwest and northern Rockies snow forecasts.</description>
+    <description>Private snow forecast briefings for the Pacific Northwest and northern Rockies, plus a weekly NWAC avalanche briefing.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 09:51:50 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 12:29:06 -0800</lastBuildDate>
     <itunes:author>Daily Snow Briefing</itunes:author>
     <itunes:image href="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/cover.jpg"/>
     <itunes:category text="Sports"/>
@@ -18,6 +18,15 @@
       <pubDate>Thu, 19 Nov 2026 09:30:00 -0800</pubDate>
       <enclosure url="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/episodes/2026-11-19.mp4" length="5947476" type="video/mp4"/>
       <itunes:duration>3:01</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Avalanche · Thu Nov 19: NWAC early season: no danger ratings yet; thin snow, rocks and terrain traps are the main hazard at Snoqualmie</title>
+      <description>NWAC early season: no danger ratings yet; thin snow, rocks and terrain traps are the main hazard at Snoqualmie</description>
+      <guid isPermaLink="false">daily-snow-video-2026-11-19-avalanche</guid>
+      <pubDate>Thu, 19 Nov 2026 10:30:00 -0800</pubDate>
+      <enclosure url="https://stevenkent-nbwa.github.io/snow-briefing-ecbd38e1/episodes/2026-11-19-avalanche.mp4" length="5462212" type="video/mp4"/>
+      <itunes:duration>2:50</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
