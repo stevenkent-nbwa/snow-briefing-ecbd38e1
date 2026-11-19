@@ -107,28 +107,36 @@ def s_overview(s, step, path):
         chip(f, 1450, y + 4, 410, 56, d, size=34, a=a); y += 76
     footer(f, s.get("source", "")); save(f, path)
 
-def triangle(f, x, y, w, h, bands, title, a):
-    """Mountain triangle: bands = [above, near, below] treeline danger."""
-    T(f, x + w / 2, y, title, 50, ACCENT, "bold", ha="center", alpha=a)
-    ax = px(f, x, y + 70, w, h); ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
-    bands = bands or [None, None, None]; cuts = [1.0, 0.64, 0.33, 0.0]
-    for i, d in enumerate(bands):
-        t, b = cuts[i], cuts[i + 1]; ht, hb = (1 - t) / 2, (1 - b) / 2
-        ax.add_patch(Polygon([(0.5 - (0.5 - hb) * 1, b), (0.5 + (0.5 - hb), b), (0.5 + (0.5 - ht), t), (0.5 - (0.5 - ht), t)], closed=True,
-                             facecolor=DCOL[d], edgecolor=("#ed1c24" if d == 5 else BG), linewidth=4, alpha=a))
-    labels = ["Above treeline", "Near treeline", "Below treeline"]
-    for i, d in enumerate(bands):
-        yy = y + 70 + h * (1 - (cuts[i] + cuts[i + 1]) / 2)
-        T(f, x + w + 30, yy - 22, labels[i], 32, MUTED, "semibold", va="center", alpha=a)
-        T(f, x + w + 30, yy + 22, (f"{d} · " if d else "") + DNAME[d], 42, (DCOL[d] if d and d != 5 else TEXT), "bold", va="center", alpha=a)
+ROW_Y, ROW_H, ROW_GAP = 250, 150, 10   # danger rows: above / near / below treeline
+def swatch(f, x, y, d, a):
+    box(f, x, y, 56, 56, DCOL[d], a, 0.006, ec=("#ed1c24" if d == 5 else "#8aa0b8" if d is None else "none"), lw=(3 if d in (5, None) else 0))
 
 def s_danger(s, step, path):
+    """NWAC-style danger graphic: rows for each elevation band, a triangle (narrow top) for today, ratings for tomorrow, danger scale."""
     z = ZONES.get(FOCUS, {}); f = fig_(); header(f, "Snoqualmie Pass", s["headline"])
-    triangle(f, 110, 200, 430, 520, z.get("today"), s.get("today_label", "Today"), 1.0 if step == 0 else 0.35)
-    triangle(f, 1010, 200, 430, 520, z.get("tomorrow"), s.get("tomorrow_label", "Tomorrow"), 1.0 if step >= 1 else 0.35)
+    today = z.get("today") or [None, None, None]; tom = z.get("tomorrow") or [None, None, None]
+    a0, a1 = (1.0, 0.35) if step == 0 else (0.35, 1.0)
+    T(f, 60, 192, s.get("today_label", "Today"), 40, ACCENT, "bold", alpha=a0); T(f, 1330, 192, s.get("tomorrow_label", "Tomorrow"), 40, ACCENT, "bold", alpha=a1)
+    labels = ["Above treeline", "Near treeline", "Below treeline"]
+    tot = 3 * ROW_H + 2 * ROW_GAP; tx, tw = 370, 380
+    for i in range(3):
+        y = ROW_Y + i * (ROW_H + ROW_GAP)
+        box(f, 60, y, 1230, ROW_H, PANEL, 1.0, 0.006); box(f, 1330, y, 530, ROW_H, PANEL, 1.0, 0.006)
+        box(f, 82, y + ROW_H / 2 - 26, 250, 52, "#2a4664", a0, 0.006); T(f, 207, y + ROW_H / 2, labels[i], 30, TEXT, "semibold", ha="center", va="center", alpha=a0)
+        d = today[i]; swatch(f, 790, y + ROW_H / 2 - 28, d, a0); T(f, 866, y + ROW_H / 2, (f"{d} - " if d else "") + DNAME[d], 46, TEXT, "bold", va="center", alpha=a0)
+        d = tom[i]; swatch(f, 1360, y + ROW_H / 2 - 28, d, a1); T(f, 1436, y + ROW_H / 2, (f"{d} - " if d else "") + DNAME[d], 46, TEXT, "bold", va="center", alpha=a1)
+    ax = px(f, tx, ROW_Y, tw, tot); ax.set_zorder(3); ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off"); ax.patch.set_alpha(0)
+    for i, d in enumerate(today):
+        yt = 1 - i * (ROW_H + ROW_GAP) / tot; yb = 1 - (i * (ROW_H + ROW_GAP) + ROW_H) / tot
+        ht, hb = 0.5 * (1 - yt), 0.5 * (1 - yb)   # zero width at the apex (top), full width at the base
+        ax.add_patch(Polygon([(0.5 - hb, yb), (0.5 + hb, yb), (0.5 + ht, yt), (0.5 - ht, yt)], closed=True, facecolor=DCOL[d],
+                             edgecolor=("#ed1c24" if d == 5 else "none"), linewidth=3, alpha=a0))
+    T(f, 60, 772, "DANGER SCALE", 32, TEXT, "bold", va="center"); bw = (1860 - 400 - 4 * 12) / 5
+    for lv in range(1, 6):
+        x = 400 + (lv - 1) * (bw + 12); box(f, x, 752, bw, 18, DCOL[lv], 1.0, 0.002, ec=("#ed1c24" if lv == 5 else "none"), lw=(2 if lv == 5 else 0)); T(f, x + bw / 2, 790, f"{lv} - {DNAME[lv]}", 28, MUTED, "semibold", ha="center")
     if s.get("note"):
-        box(f, 60, 830, 1800, 170, PANEL); bar(f, 60, 830, 16, 170, ACCENT)
-        T(f, 110, 850, s.get("note_title", "Travel advice"), 36, ACCENT, "bold"); T(f, 110, 905, s["note"], 44, TEXT, "bold", wrap=False)
+        box(f, 60, 850, 1800, 150, PANEL); bar(f, 60, 850, 16, 150, ACCENT)
+        T(f, 110, 866, s.get("note_title", "Travel advice"), 34, ACCENT, "bold"); T(f, 110, 920, s["note"], 44, TEXT, "bold")
     footer(f, s.get("source", "")); save(f, path)
 
 ASP = ["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"]

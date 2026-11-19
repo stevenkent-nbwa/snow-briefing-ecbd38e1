@@ -10,9 +10,9 @@
     2
    ],
    "tomorrow": [
-    2,
-    2,
-    1
+    4,
+    3,
+    3
    ]
   },
   "Stevens Pass": {
@@ -139,7 +139,9 @@
     [
      "b"
     ]
-   ]
+   ],
+   "today_label": "Today · Thursday",
+   "tomorrow_label": "Friday"
   },
   {
    "type": "problems",
