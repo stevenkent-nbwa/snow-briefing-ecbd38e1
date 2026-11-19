@@ -1,0 +1,306 @@
+{
+ "_note": "FORMAT EXAMPLE ONLY for daily-forecast season. All ratings, text and narration here are made up; never reuse them.",
+ "date_long": "Thursday, January 14",
+ "date_short": "Thu, Jan 14",
+ "zones": {
+  "Snoqualmie Pass": {
+   "today": [
+    3,
+    3,
+    2
+   ],
+   "tomorrow": [
+    2,
+    2,
+    1
+   ]
+  },
+  "Stevens Pass": {
+   "today": [
+    3,
+    2,
+    2
+   ],
+   "tomorrow": [
+    2,
+    2,
+    1
+   ]
+  },
+  "Olympics": {
+   "today": [
+    2,
+    2,
+    1
+   ]
+  },
+  "West Slopes North": {
+   "today": [
+    3,
+    3,
+    2
+   ]
+  },
+  "West Slopes Central": {
+   "today": [
+    3,
+    2,
+    2
+   ]
+  },
+  "West Slopes South": {
+   "today": [
+    2,
+    2,
+    1
+   ]
+  },
+  "East Slopes North": {
+   "today": [
+    2,
+    2,
+    1
+   ]
+  },
+  "East Slopes Central": {
+   "today": [
+    4,
+    3,
+    2
+   ]
+  },
+  "East Slopes South": {
+   "today": [
+    1,
+    1,
+    1
+   ]
+  },
+  "Mt Hood": {
+   "today": [
+    5,
+    3,
+    2
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "say": [
+    [
+     "Test."
+    ]
+   ]
+  },
+  {
+   "type": "overview",
+   "headline": "Considerable at Snoqualmie",
+   "groups": [
+    [
+     "Snoqualmie Pass"
+    ],
+    [
+     "Olympics",
+     "West Slopes North",
+     "West Slopes Central",
+     "Stevens Pass",
+     "West Slopes South"
+    ],
+    [
+     "East Slopes North",
+     "East Slopes Central",
+     "East Slopes South",
+     "Mt Hood"
+    ]
+   ],
+   "source": "NWAC avalanche forecast · issued Wed Jan 13, 6 PM",
+   "say": [
+    [
+     "a"
+    ],
+    [
+     "b"
+    ],
+    [
+     "c"
+    ]
+   ]
+  },
+  {
+   "type": "danger",
+   "headline": "Fresh wind slabs near ridges",
+   "note": "Avoid wind-loaded slopes steeper than 30 degrees.",
+   "source": "NWAC",
+   "say": [
+    [
+     "a"
+    ],
+    [
+     "b"
+    ]
+   ]
+  },
+  {
+   "type": "problems",
+   "problems": [
+    {
+     "name": "Wind Slab",
+     "likelihood": "likely",
+     "size": [
+      "1",
+      "2"
+     ],
+     "location": [
+      "north upper",
+      "northeast upper",
+      "east upper",
+      "north middle",
+      "northeast middle",
+      "east middle",
+      "southeast upper"
+     ],
+     "advice": [
+      "Avoid fresh drifts below ridges",
+      "Watch for shooting cracks",
+      "Choose lower-angle slopes"
+     ]
+    },
+    {
+     "name": "Persistent Slab",
+     "likelihood": "possible",
+     "size": [
+      "2",
+      "3"
+     ],
+     "location": [
+      "north upper",
+      "north middle",
+      "northwest upper"
+     ],
+     "advice": [
+      "Stay off steep shaded slopes"
+     ]
+    }
+   ],
+   "source": "NWAC",
+   "say": [
+    [
+     "a"
+    ],
+    [
+     "b"
+    ]
+   ]
+  },
+  {
+   "type": "cards",
+   "kicker": "Snoqualmie Pass weather",
+   "headline": "Snow tonight, clearing Friday",
+   "rows": [
+    [
+     "Next 48 hours",
+     "6 to 10 inches at 5,000 ft",
+     "Heaviest Thursday night"
+    ],
+    [
+     "Snow level",
+     "2,500 to 3,500 ft",
+     "Freezing level near 4,000 ft Friday"
+    ],
+    [
+     "Ridge winds",
+     "Moderate southwest",
+     "Easing Friday afternoon"
+    ]
+   ],
+   "source": "NWAC",
+   "say": [
+    [
+     "a"
+    ],
+    [
+     "b"
+    ],
+    [
+     "c"
+    ]
+   ]
+  },
+  {
+   "type": "zones",
+   "headline": "Highest danger on the east slopes",
+   "groups": [
+    [
+     "Olympics",
+     "West Slopes North",
+     "West Slopes Central",
+     "Stevens Pass",
+     "West Slopes South"
+    ],
+    [
+     "East Slopes North",
+     "East Slopes Central",
+     "East Slopes South",
+     "Mt Hood"
+    ]
+   ],
+   "notes": {
+    "Olympics": "Storm slabs at upper elevations",
+    "East Slopes Central": "Buried weak layer is reactive",
+    "Mt Hood": "Extreme wind loading"
+   },
+   "source": "NWAC",
+   "say": [
+    [
+     "a"
+    ],
+    [
+     "b"
+    ]
+   ]
+  },
+  {
+   "type": "bottom",
+   "rows": [
+    [
+     "Snoqualmie today",
+     "Considerable up high, Moderate below treeline",
+     3
+    ],
+    [
+     "Best bet",
+     "Low-angle trees below treeline",
+     "focus"
+    ],
+    [
+     "Watch for",
+     "Cracking, whumpfing, fresh drifts",
+     "warn"
+    ],
+    [
+     "Plan",
+     "Check nwac.us the night before",
+     "muted"
+    ]
+   ],
+   "say": [
+    [
+     "a"
+    ],
+    [
+     "b"
+    ],
+    [
+     "c"
+    ],
+    [
+     "d"
+    ],
+    [
+     "e"
+    ]
+   ]
+  }
+ ]
+}

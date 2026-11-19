@@ -1,0 +1,225 @@
+{
+ "_note": "Real early-season episode from Nov 19, 2026 (no danger ratings). Use as a format example; never reuse its facts.",
+ "date_long": "Thursday, November 19",
+ "date_short": "Thu, Nov 19",
+ "zones": {},
+ "scenes": [
+  {
+   "type": "title",
+   "say": [
+    [
+     "Good morning Steven. Here's your Avalanche Briefing for Thursday, November nineteenth."
+    ]
+   ]
+  },
+  {
+   "type": "overview",
+   "headline": "No danger ratings yet",
+   "groups": [
+    [
+     "Olympics",
+     "West Slopes North",
+     "West Slopes Central",
+     "Stevens Pass",
+     "Snoqualmie Pass",
+     "West Slopes South",
+     "East Slopes North",
+     "East Slopes Central",
+     "East Slopes South",
+     "Mt Hood"
+    ],
+    [
+     "Snoqualmie Pass"
+    ]
+   ],
+   "source": "NWAC Snow and Avalanche Discussion · Schiff and Lazzara · Wed Nov 18, 6 PM",
+   "say": [
+    [
+     "The Northwest Avalanche Center hasn't started daily danger ratings yet, so all ten zones show no rating today.",
+     "Until daily forecasts begin, forecasters post an early season Snow and Avalanche Discussion every Monday, Wednesday and Friday evening.",
+     "The latest came out Wednesday evening from Payton Schiff and Lee Lazzara, and it covers every zone."
+    ],
+    [
+     "Let's start with Snoqualmie Pass, your home zone."
+    ]
+   ]
+  },
+  {
+   "type": "danger",
+   "headline": "Thin snow, rocks still showing",
+   "note_title": "NWAC bottom line",
+   "note": "Enough snow up high for avalanches; obstacles are the bigger risk",
+   "source": "NWAC Snow and Avalanche Discussion · Schiff and Lazzara · Wed Nov 18, 6 PM",
+   "say": [
+    [
+     "There's no danger rating at Snoqualmie Pass today or tomorrow.",
+     "October storms brought the first snow, but warm atmospheric rivers in early November melted much of it away."
+    ],
+    [
+     "Snow cover is limited, but upper elevations hold enough snow to ride, and enough for avalanches.",
+     "The forecasters say exposed or partly buried rocks and stumps are likely the biggest hazard right now."
+    ]
+   ]
+  },
+  {
+   "type": "cards",
+   "kicker": "Snoqualmie Pass · early season",
+   "headline": "Three things to watch",
+   "source": "NWAC Snow and Avalanche Discussion · Schiff and Lazzara · Wed Nov 18, 6 PM",
+   "rows": [
+    [
+     "Small slides",
+     "Wind drifts near ridges",
+     "Downwind side, just below ridgelines"
+    ],
+    [
+     "Terrain traps",
+     "Rocks and cliffs below you",
+     "A small slide can push you into them"
+    ],
+    [
+     "Slow travel",
+     "Hidden rocks and stumps",
+     "Shallow, patchy snow; budget extra time"
+    ]
+   ],
+   "say": [
+    [
+     "First, small avalanches.",
+     "Look for pockets of wind drifted snow along and just below the downwind side of ridgelines.",
+     "If the sun comes out, watch for rollerballs and snow shedding off rocks and trees, which are early signs of wet snow instability."
+    ],
+    [
+     "Second, terrain traps.",
+     "With so little snow, even a small slide could push you into rocks or over cliffs, so pay attention to what's below you."
+    ],
+    [
+     "Third, slow travel.",
+     "Shallow, patchy snow hides rocks and stumps, so keep your plan simple, steer around steep slopes, and budget extra time."
+    ]
+   ]
+  },
+  {
+   "type": "cards",
+   "kicker": "Snoqualmie Pass weather",
+   "headline": "Dry Friday, damp weekend",
+   "source": "NWAC Mountain Weather · Dallas Glass · Wed Nov 18, 1:46 PM",
+   "rows": [
+    [
+     "Through Friday",
+     "Trace to 1″",
+     "Then mostly dry, 25 to 31°F at 5,000 ft"
+    ],
+    [
+     "Freezing level",
+     "3,000 to 4,500 ft",
+     "Light east winds at the ridges"
+    ],
+    [
+     "Weekend",
+     "Damp, maybe more snow",
+     "Snow level 2,000 to 2,500 ft"
+    ]
+   ],
+   "say": [
+    [
+     "Now the mountain weather for Snoqualmie Pass, from Wednesday afternoon's forecast.",
+     "Expect only a trace to one inch of new snow through Friday, then mostly dry weather, with temperatures from twenty five to thirty one degrees at five thousand feet."
+    ],
+    [
+     "Freezing levels run from three thousand to forty five hundred feet Thursday and Friday, with light east winds along the ridges."
+    ],
+    [
+     "This weekend, a low pressure trough off the coast sends bands of precipitation our way, with snow levels around two thousand to twenty five hundred feet.",
+     "Forecasters say the weekend looks damp at the very least, and how much snow falls depends on where that trough sets up."
+    ]
+   ]
+  },
+  {
+   "type": "zones",
+   "headline": "Light snow; most near Mission Ridge",
+   "notes_title": "Snow forecast, Wed–Fri",
+   "groups": [
+    [
+     "Olympics",
+     "West Slopes North",
+     "West Slopes Central",
+     "Stevens Pass",
+     "West Slopes South"
+    ],
+    [
+     "East Slopes North",
+     "East Slopes Central",
+     "East Slopes South",
+     "Mt Hood"
+    ]
+   ],
+   "notes": {
+    "Olympics": "Trace to 1″",
+    "West Slopes North": "None at Mt. Baker",
+    "West Slopes Central": "Trace to 1″",
+    "Stevens Pass": "Trace to 1″",
+    "West Slopes South": "1–3″ Crystal, Paradise",
+    "East Slopes North": "Trace to 1″",
+    "East Slopes Central": "4–6″ near Mission Ridge",
+    "East Slopes South": "1–3″ near Tieton",
+    "Mt Hood": "Thin at 5,000 ft"
+   },
+   "source": "NWAC Mountain Weather and Snow and Avalanche Discussion · Wed Nov 18",
+   "say": [
+    [
+     "Here's a quick look at the other zones.",
+     "On the west slopes, Crystal and Paradise were forecast to get one to three inches from Wednesday night's storm, Stevens Pass and Hurricane Ridge only a trace to an inch, and none at Mount Baker."
+    ],
+    [
+     "East of the crest, east winds favored the Wenatchee Mountains, with four to six inches forecast near Mission Ridge and one to three inches in the Tieton area.",
+     "On Mount Hood, forecasters found only a thin layer of snow at five thousand feet, but considerably more by sixty five hundred feet.",
+     "Across the region, the most consistent snow is in high alpine terrain, especially on the volcanoes."
+    ]
+   ]
+  },
+  {
+   "type": "bottom",
+   "rows": [
+    [
+     "Snoqualmie this week",
+     "No danger rating yet; thin, patchy snow",
+     "muted"
+    ],
+    [
+     "Biggest hazard",
+     "Rocks, stumps and terrain traps",
+     "warn"
+    ],
+    [
+     "Watch for",
+     "Fresh drifts below ridges, rollerballs",
+     "focus"
+    ],
+    [
+     "Next NWAC update",
+     "Friday 6 PM discussion",
+     "muted"
+    ]
+   ],
+   "say": [
+    [
+     "Bottom line for Snoqualmie: no danger rating yet, with thin and patchy snow."
+    ],
+    [
+     "The biggest hazard is hitting rocks, stumps and terrain traps, not big avalanches."
+    ],
+    [
+     "Watch for fresh drifts below ridgelines, and rollerballs if the sun comes out."
+    ],
+    [
+     "The next update from the Northwest Avalanche Center is Friday at six in the evening."
+    ],
+    [
+     "Always read the full forecast before you head out, and share what you see with the Northwest Avalanche Center.",
+     "That's your Avalanche Briefing. Stay safe out there."
+    ]
+   ]
+  }
+ ]
+}
